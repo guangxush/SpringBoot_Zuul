@@ -16,7 +16,7 @@ public class AccessTokenFilter extends ZuulFilter {
 
         ctx.setSendZuulResponse(true);
         ctx.setResponseStatusCode(200);
-        ctx.setResponseBody("{\"name\":\"chhliu\"}");// 输出最终结果
+        ctx.setResponseBody("{\"name\":\"shgx\"}");// 输出最终结果
         return null;
     }
 

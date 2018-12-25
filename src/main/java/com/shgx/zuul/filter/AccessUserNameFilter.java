@@ -14,7 +14,7 @@ public class AccessUserNameFilter extends ZuulFilter {
         System.out.println(String.format("%s AccessUserNameFilter request to %s", request.getMethod(), request.getRequestURL().toString()));
 
         String username = request.getParameter("username");// 获取请求的参数
-        if(null != username && username.equals("chhliu")) {// 如果请求的参数不为空，且值为chhliu时，则通过
+        if(null != username && username.equals("shgx")) {// 如果请求的参数不为空，且值为chhliu时，则通过
             ctx.setSendZuulResponse(true);// 对该请求进行路由
             ctx.setResponseStatusCode(200);
             ctx.set("isSuccess", true);// 设值，让下一个Filter看到上一个Filter的状态
